@@ -18,17 +18,20 @@ const LoginPage = () => {
 
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center rounded-lg"
+      className="relative min-h-screen bg-cover bg-center rounded-lg py-8"
       style={{
         backgroundImage:
-          "url(https://bouqs.com/blog/wp-content/uploads/2023/08/lilly-8094912_1280-min-1080x720.png)",
+          "url(https://cdn.britannica.com/22/187222-050-07B17FB6/apples-on-a-tree-branch.jpg)",
       }}
     >
       <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
       <div className="relative z-10 flex items-center justify-center min-h-screen text-white">
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full space-y-6">
-          <Link to={"/"} className="text-2xl font-bold text-center text-green-600">
-            Login to Flower Shop
+          <Link
+            to={"/"}
+            className="text-2xl font-bold text-center text-green-600"
+          >
+            Login to Fruit Shop
           </Link>
           {error && <p className="text-red-500 text-sm text-center">{error}</p>}
           <form onSubmit={handleSubmit} className="space-y-4">

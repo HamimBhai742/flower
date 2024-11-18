@@ -30,16 +30,19 @@ const RegisterPage = () => {
 
   return (
     <div
-      className="relative min-h-screen rounded-lg bg-cover bg-center"
+      className="relative min-h-screen rounded-lg bg-cover bg-center py-8"
       style={{
         backgroundImage:
-          "url(https://www.colorblends.com/wp-content/uploads/2020/01/1505_BestPink_CGC9568sqII-1024x1024.jpg)",
+          "url(https://cdn.britannica.com/22/187222-050-07B17FB6/apples-on-a-tree-branch.jpg)",
       }}
     >
       <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
-      <div className="relative z-10 flex items-center justify-center min-h-screen text-white">
+      <div className="relative z-10 flex items-center justify-center min-h-screen text-white my-6">
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full space-y-6">
-          <Link to="/" className="text-2xl font-bold text-center text-green-600">
+          <Link
+            to="/"
+            className="text-2xl font-bold text-center text-green-600"
+          >
             Create an Account
           </Link>
           {error && <p className="text-red-500 text-sm text-center">{error}</p>}

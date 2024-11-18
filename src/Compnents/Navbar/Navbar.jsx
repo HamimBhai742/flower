@@ -4,7 +4,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav className="bg-green-500 p-4 flex justify-between items-center">
-      <h1 className="text-white font-bold text-xl">Flower Shop</h1>
+      <h1 className="text-white font-bold text-xl">Fruit Shop</h1>
       <div className="flex items-center space-x-4">
         <NavLink to="/" className="text-white hover:underline">
           Home
